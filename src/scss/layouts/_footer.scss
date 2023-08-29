@@ -18,6 +18,13 @@
     max-width: 9rem;
 
     margin-bottom: 2rem;
+
+    @media (hover: hover) {
+      &:is(:hover, :focus, :focus-visible) {
+        outline: solid 0.13rem var(--primary-clr-one);
+        outline-offset: 0.25rem;
+      }
+    }
   }
 
   &__nav {
@@ -43,6 +50,12 @@
 
   &__social-icon {
     fill: var(--primary-clr-one);
+
+    @media (hover: hover) {
+      &:is(:hover, :focus, :focus-visible) {
+        fill: var(--primary-clr-three);
+      }
+    }
   }
 }
 

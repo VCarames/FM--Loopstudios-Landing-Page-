@@ -72,6 +72,20 @@
 
       z-index: -1;
     }
+
+    @media (hover: hover) {
+      &:is(:hover, :focus, :focus-visible) {
+        color: var(--primary-clr-two);
+        transition: var(--transition);
+      }
+
+      &:is(:hover, :focus, :focus-visible):after {
+        background: hsla(0, 0%, 100%, 0.7);
+        background-image: unset;
+
+        transition: var(--transition);
+      }
+    }
   }
 
   &__picture img {
