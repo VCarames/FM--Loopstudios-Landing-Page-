@@ -59,7 +59,7 @@
 .creations-section__subheading {
   color: var(--primary-clr-one);
   font-family: var(--ff-josefin);
-  font-size: var(--fs-32);
+  font-size: var(--fs-24);
   font-weight: var(--fw-300);
   line-height: 1; /* 32px */
   text-transform: uppercase;
@@ -88,6 +88,10 @@
 
   .section-heading {
     font-size: var(--fs-48);
+  }
+
+  .creations-section__subheading {
+    font-size: var(--fs-32);
   }
 }
 
