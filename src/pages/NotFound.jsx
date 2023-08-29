@@ -4,7 +4,7 @@ import Header from "../components/Header";
 function NotFound() {
   return (
     <>
-      <Header />
+      <Header heading="Oops!... Something went wrong." />
       <Footer />
     </>
   );

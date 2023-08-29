@@ -40,9 +40,13 @@
     align-self: end;
 
     margin: 0 0 1.25rem 1.25rem;
+
+    outline: none;
   }
 
   &__link {
+    outline: none;
+
     &::before {
       content: "";
       display: block;
@@ -107,13 +111,13 @@
   .creations-section {
     align-items: normal;
 
-    margin: 0 auto 150px auto;
+    margin: 0 auto 9.38rem auto;
 
     &__container {
       align-items: center;
       justify-content: space-between;
 
-      margin-bottom: 80px;
+      margin-bottom: 5rem;
     }
 
     &__list {

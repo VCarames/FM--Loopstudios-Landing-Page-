@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Logo from "/assets/logo.svg";
 import Navbar from "./Navbar";
 
-function Header() {
+function Header({ heading }) {
   return (
     <header className="header">
       <div className="header__content">
@@ -13,9 +13,7 @@ function Header() {
         <Navbar />
       </div>
       <section className="hero-section">
-        <h1 className="hero-section__heading intro-heading">
-          Immersive experiences that deliver
-        </h1>
+        <h1 className="hero-section__heading intro-heading">{heading}</h1>
       </section>
     </header>
   );

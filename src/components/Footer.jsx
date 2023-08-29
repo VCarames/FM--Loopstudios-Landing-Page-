@@ -8,7 +8,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer__content">
         <div className="footer__container">
-          <Link className="footer__logo" aria-label="Home - Loopstudios">
+          <Link to="/" className="footer__logo" aria-label="Home - Loopstudios">
             <img src={Logo} alt="" />
           </Link>
           <FooterNav />

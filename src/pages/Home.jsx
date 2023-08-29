@@ -6,7 +6,7 @@ import Header from "../components/Header";
 function Home() {
   return (
     <>
-      <Header />
+      <Header heading="Immersive experiences that deliver" />
       <main>
         <About />
         <Creations />
