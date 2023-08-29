@@ -106,4 +106,178 @@ button {
   --transition: 0.8s all;
 }
 
+.nav__menu-link {
+  color: var(--primary-clr-one);
+  font-family: var(--ff-josefin);
+  font-size: var(--fs-24);
+  font-weight: var(--fw-300);
+  line-height: 1.04; /* 25px */
+  text-transform: uppercase;
+}
+
+@media (min-width: 50rem) {
+  .nav__menu-link {
+    font-family: var(--ff-alata);
+    font-size: var(--fs-15);
+    font-weight: var(--fw-400);
+    line-height: 1.67; /* 25px */
+    text-transform: capitalize;
+  }
+}
+.intro-heading {
+  color: var(--primary-clr-one);
+  font-family: var(--ff-josefin);
+  font-size: var(--fs-32);
+  font-weight: var(--fw-300);
+  line-height: 0.95; /* 38px */
+  text-transform: uppercase;
+}
+
+@media (min-width: 31.25rem) {
+  .intro-heading {
+    font-size: var(--fs-52);
+    line-height: 0.97; /* 70px */
+  }
+}
+@media (min-width: 62.5rem) {
+  .intro-heading {
+    font-size: var(--fs-72);
+  }
+}
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/images/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2.5rem 1.94rem 2.5rem 1.94rem;
+  margin-bottom: 6rem;
+}
+.header__content {
+  max-width: 69.38rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.header__logo {
+  max-width: 9rem;
+  z-index: 4;
+}
+
+.hero-section {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+.hero-section__heading {
+  max-width: 14ch;
+  border: solid 0.13rem var(--primary-clr-one);
+  padding: 1.25rem;
+  margin: 14.19rem auto 14.19rem auto;
+}
+
+@media (min-width: 62.5rem) {
+  .header {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 1.94rem 2.5rem 1.94rem;
+    margin-bottom: 9.94rem;
+  }
+  .header__logo {
+    max-width: 12rem;
+  }
+  .hero-section__heading {
+    padding: 2.38rem 2.06rem 1.75rem 2.38rem;
+    margin: 8rem auto 6.69rem 8.81rem;
+  }
+}
+[aria-controls=nav__menu-list] {
+  all: unset;
+  display: block;
+  position: relative;
+  z-index: 4;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  [aria-controls=nav__menu-list]:is(:hover, :focus, :focus-visible) {
+    outline: solid 0.13rem var(--primary-clr-one);
+    outline-offset: 0.25rem;
+  }
+}
+[aria-controls=nav__menu-list] .nav__toggle-line {
+  display: block;
+  width: 2.5rem;
+  height: 0.19rem;
+  background: var(--primary-clr-one);
+  margin-block: 0.63rem;
+  border-radius: 0.25rem;
+  transition: transform 0.5s, opacity 0.25s;
+}
+[aria-controls=nav__menu-list][aria-expanded=true] .nav__toggle-line:nth-child(1) {
+  transform: translateY(0.81rem) rotate(45deg);
+}
+[aria-controls=nav__menu-list][aria-expanded=true] .nav__toggle-line:nth-child(2) {
+  opacity: 0;
+}
+[aria-controls=nav__menu-list][aria-expanded=true] .nav__toggle-line:nth-child(3) {
+  transform: translateY(-0.81rem) rotate(-45deg);
+}
+
+[aria-expanded=false] + .nav__menu-list {
+  visibility: hidden;
+  transform: translateX(-100%);
+}
+
+.nav__menu-list {
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  min-height: 100vh;
+  min-height: 100svh;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  overflow: auto;
+  padding: 13.94rem 13.88rem 0 1.5rem;
+  background: var(--primary-clr-two);
+  box-shadow: -0.31rem 0 0.69rem 0 var(--box-shadow);
+  transition: transform 0.6s cubic-bezier(0, 0, 0, 1), visibility 0.3s linear;
+}
+
+.disable-scroll {
+  overflow: hidden;
+}
+
+@media (min-width: 50rem) {
+  .nav {
+    position: static;
+    inset-block-start: 1rem;
+    inset-inline-end: 1rem;
+  }
+  .nav__menu-list {
+    visibility: visible;
+    flex-direction: row;
+    gap: 2.06rem;
+    min-height: auto;
+    padding: 0;
+    position: static;
+    background: transparent;
+    box-shadow: none;
+  }
+  [aria-controls=nav__menu-list] {
+    all: unset;
+    display: none;
+    position: relative;
+    z-index: 1;
+  }
+  [aria-expanded=false] + .nav__menu-list {
+    transform: none;
+    visibility: visible;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

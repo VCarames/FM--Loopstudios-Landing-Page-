@@ -1,0 +1,62 @@
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/assets/images/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  padding: 2.5rem 1.94rem 2.5rem 1.94rem;
+
+  margin-bottom: 6rem;
+
+  &__content {
+    max-width: 69.38rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 auto;
+  }
+
+  &__logo {
+    max-width: 9rem;
+    z-index: 4;
+  }
+}
+
+.hero-section {
+  max-width: 90rem;
+  margin: 0 auto;
+
+  &__heading {
+    max-width: 14ch;
+
+    border: solid 0.13rem var(--primary-clr-one);
+
+    padding: 1.25rem;
+    margin: 14.19rem auto 14.19rem auto;
+  }
+}
+
+@media (min-width: 62.5rem) {
+  .header {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(/assets/images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    padding: 4rem 1.94rem 2.5rem 1.94rem;
+    margin-bottom: 9.94rem;
+  }
+
+  .header__logo {
+    max-width: 12rem;
+  }
+
+  .hero-section__heading {
+    padding: 2.38rem 2.06rem 1.75rem 2.38rem;
+    margin: 8rem auto 6.69rem 8.81rem;
+  }
+}

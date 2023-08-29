@@ -1,0 +1,110 @@
+[aria-controls="nav__menu-list"] {
+  all: unset;
+  display: block;
+
+  position: relative;
+  z-index: 4;
+
+  cursor: pointer;
+
+  @media (hover: hover) {
+    &:is(:hover, :focus, :focus-visible) {
+      outline: solid 0.13rem var(--primary-clr-one);
+      outline-offset: 0.25rem;
+    }
+  }
+
+  & .nav__toggle-line {
+    display: block;
+    width: 2.5rem;
+    height: 0.19rem;
+
+    background: var(--primary-clr-one);
+    margin-block: 0.63rem;
+    border-radius: 0.25rem;
+
+    transition: transform 0.5s, opacity 0.25s;
+  }
+
+  &[aria-expanded="true"] .nav__toggle-line:nth-child(1) {
+    transform: translateY(0.81rem) rotate(45deg);
+  }
+
+  &[aria-expanded="true"] .nav__toggle-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  &[aria-expanded="true"] .nav__toggle-line:nth-child(3) {
+    transform: translateY(-0.81rem) rotate(-45deg);
+  }
+}
+
+[aria-expanded="false"] + .nav__menu-list {
+  visibility: hidden;
+  transform: translateX(-100%);
+}
+
+.nav__menu-list {
+  visibility: visible;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+
+  min-height: 100vh;
+  min-height: 100svh;
+  width: 100%;
+
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+
+  overflow: auto;
+
+  padding: 13.94rem 13.88rem 0 1.5rem;
+  background: var(--primary-clr-two);
+  box-shadow: -0.31rem 0 0.69rem 0 var(--box-shadow);
+
+  transition: transform 0.6s cubic-bezier(0, 0, 0, 1), visibility 0.3s linear;
+}
+
+.disable-scroll {
+  overflow: hidden;
+}
+
+@media (min-width: 50rem) {
+  .nav {
+    position: static;
+    inset-block-start: 1rem;
+    inset-inline-end: 1rem;
+
+    &__menu-list {
+      visibility: visible;
+
+      flex-direction: row;
+      gap: 2.06rem;
+
+      min-height: auto;
+
+      padding: 0;
+
+      position: static;
+
+      background: transparent;
+      box-shadow: none;
+    }
+  }
+
+  [aria-controls="nav__menu-list"] {
+    all: unset;
+    display: none;
+    position: relative;
+    z-index: 1;
+  }
+
+  [aria-expanded="false"] + .nav__menu-list {
+    transform: none;
+    visibility: visible;
+  }
+}
