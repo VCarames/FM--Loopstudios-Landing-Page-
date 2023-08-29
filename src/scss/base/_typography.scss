@@ -38,3 +38,20 @@
     font-size: var(--fs-72);
   }
 }
+
+.footer__nav-link {
+  color: var(--primary-clr-one);
+  font-family: var(--ff-alata);
+  font-size: var(--fs-15);
+  font-weight: var(--fw-400);
+  line-height: 1.67; /* 25px */
+}
+
+.footer__copyright {
+  color: var(--primary-clr-one);
+  opacity: 0.5;
+  font-family: var(--ff-alata);
+  font-size: var(--fs-15);
+  font-weight: var(--fw-400);
+  line-height: 1.67; /* 25px */
+}
