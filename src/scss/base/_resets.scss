@@ -76,6 +76,7 @@ button {
   html:focus-within {
     scroll-behavior: auto;
   }
+
   *,
   *::before,
   *::after {
@@ -85,25 +86,3 @@ button {
     scroll-behavior: auto !important;
   }
 }
-:root {
-  --ff-alata: "Alata", sans-serif;
-  --ff-josefin: "Josefin Sans", sans-serif;
-  --fs-14: 0.88rem;
-  --fs-15: 0.94rem;
-  --fs-24: 1.5rem;
-  --fs-32: 2rem;
-  --fs-40: 2.5rem;
-  --fs-48: 3rem;
-  --fs-52: 3.25rem;
-  --fs-72: 4.5rem;
-  --fw-300: 300;
-  --fw-400: 400;
-  --primary-clr-one: hsl(0, 0%, 100%);
-  --primary-clr-two: hsl(0, 0%, 0%);
-  --primary-clr-three: hsl(0, 0%, 55%);
-  --primary-clr-four: hsl(0, 0%, 41%);
-  --box-shadow: hsla(0, 0%, 0%, 0.2);
-  --transition: 0.8s all;
-}
-
-/*# sourceMappingURL=main.css.map */
