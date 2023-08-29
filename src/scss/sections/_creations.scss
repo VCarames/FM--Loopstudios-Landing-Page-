@@ -107,11 +107,13 @@
   .creations-section {
     align-items: normal;
 
-    margin: 0 auto 9.31rem auto;
+    margin: 0 auto 150px auto;
 
     &__container {
       align-items: center;
       justify-content: space-between;
+
+      margin-bottom: 80px;
     }
 
     &__list {

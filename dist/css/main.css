@@ -495,7 +495,7 @@ main {
   height: auto;
 }
 .about-section__content {
-  max-width: 34rem;
+  max-width: 546px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -516,8 +516,8 @@ main {
   }
   .about-section__content {
     text-align: start;
-    padding: 5.94rem 0 0 6.13rem;
-    margin-left: -10.25rem;
+    padding: 103px 0 0 100px;
+    margin-left: -166px;
   }
 }
 .creations-section {
@@ -600,11 +600,12 @@ main {
 @media (min-width: 43.75rem) {
   .creations-section {
     align-items: normal;
-    margin: 0 auto 9.31rem auto;
+    margin: 0 auto 150px auto;
   }
   .creations-section__container {
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 80px;
   }
   .creations-section__list {
     grid-template-columns: repeat(2, 1fr);
