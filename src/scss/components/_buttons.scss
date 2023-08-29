@@ -1,0 +1,33 @@
+.button {
+  min-height: 2.75rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: var(--ff-alata);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-400);
+  line-height: 1; /*1 4px */
+  letter-spacing: 0.31rem;
+  text-transform: uppercase;
+  text-align: center;
+
+  background: var(--primary-clr-one);
+
+  border: solid 0.06rem var(--primary-clr-two);
+
+  padding: 0.81rem 2.38rem 0.81rem 2.69rem;
+
+  @media (hover: hover) {
+    &:is(:hover, :focus, :focus-visible) {
+      color: var(--primary-clr-one);
+      background: var(--primary-clr-two);
+
+      outline: solid 0.13rem var(--primary-clr-two);
+      outline-offset: 0.25rem;
+
+      transition: var(--transition);
+    }
+  }
+}

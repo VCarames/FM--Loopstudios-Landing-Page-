@@ -4,7 +4,10 @@
 
 @use "components/header";
 @use "components/navbar";
+@use "components/buttons";
 
+@use "layouts/main";
 @use "layouts/footer";
 
 @use "sections/about";
+@use "sections/creations";

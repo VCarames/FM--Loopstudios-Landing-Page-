@@ -52,6 +52,15 @@
   text-transform: uppercase;
 }
 
+.creations-section__subheading {
+  color: var(--primary-clr-one);
+  font-family: var(--ff-josefin);
+  font-size: var(--fs-32);
+  font-weight: var(--fw-300);
+  line-height: 1; /* 32px */
+  text-transform: uppercase;
+}
+
 .section-text {
   color: var(--primary-clr-two);
   opacity: 0.5;
