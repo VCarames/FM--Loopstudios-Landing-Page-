@@ -37,6 +37,28 @@
   .intro-heading {
     font-size: var(--fs-72);
   }
+
+  .section-heading {
+    font-size: var(--fs-48);
+  }
+}
+
+.section-heading {
+  color: var(--primary-clr-two);
+  font-family: var(--ff-josefin);
+  font-size: var(--fs-32);
+  font-weight: var(--fw-300);
+  line-height: 1; /* 32px */
+  text-transform: uppercase;
+}
+
+.section-text {
+  color: var(--primary-clr-two);
+  opacity: 0.5;
+  font-family: var(--ff-alata);
+  font-size: var(--fs-15);
+  font-weight: var(--fw-400);
+  line-height: 1.67; /* 25px */
 }
 
 .footer__nav-link {
