@@ -150,20 +150,6 @@ button {
   text-transform: uppercase;
 }
 
-@media (min-width: 31.25rem) {
-  .intro-heading {
-    font-size: var(--fs-52);
-    line-height: 0.97; /* 70px */
-  }
-}
-@media (min-width: 62.5rem) {
-  .intro-heading {
-    font-size: var(--fs-72);
-  }
-  .section-heading {
-    font-size: var(--fs-48);
-  }
-}
 .section-heading {
   color: var(--primary-clr-two);
   font-family: var(--ff-josefin);
@@ -191,6 +177,20 @@ button {
   line-height: 1.67; /* 25px */
 }
 
+@media (min-width: 31.25rem) {
+  .intro-heading {
+    font-size: var(--fs-52);
+    line-height: 0.97; /* 70px */
+  }
+}
+@media (min-width: 62.5rem) {
+  .intro-heading {
+    font-size: var(--fs-72);
+  }
+  .section-heading {
+    font-size: var(--fs-48);
+  }
+}
 .footer__nav-link {
   position: relative;
   outline: none;
@@ -256,7 +256,7 @@ button {
   margin: 0 auto;
 }
 .hero-section__heading {
-  max-width: 14ch;
+  max-width: 14.6ch;
   border: solid 0.13rem var(--primary-clr-one);
   padding: 1.25rem;
   margin: 14.19rem auto 14.19rem auto;
@@ -275,8 +275,8 @@ button {
     max-width: 12rem;
   }
   .hero-section__heading {
-    padding: 2.38rem 2.06rem 1.75rem 2.38rem;
-    margin: 8rem auto 6.69rem 8.81rem;
+    padding: 2.38rem 2.13rem 1.75rem 2.38rem;
+    margin: 8rem auto 6.69rem 8.38rem;
   }
 }
 [aria-controls=nav__menu-list] {
@@ -380,7 +380,7 @@ button {
   text-align: center;
   background: var(--primary-clr-one);
   border: solid 0.06rem var(--primary-clr-two);
-  padding: 0.81rem 2.38rem 0.81rem 2.69rem;
+  padding: 0.81rem 2.38rem 0.81rem 2.38rem;
 }
 @media (hover: hover) {
   .button:is(:hover, :focus, :focus-visible) {
@@ -462,7 +462,7 @@ main {
   }
   .footer__nav-list {
     flex-direction: row;
-    gap: 2.06rem;
+    gap: 2rem;
   }
   .footer__social-list {
     justify-content: flex-end;
@@ -492,7 +492,7 @@ main {
   height: auto;
 }
 .about-section__content {
-  max-width: 35.38rem;
+  max-width: 544px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -506,15 +506,15 @@ main {
   .about-section {
     flex-direction: row;
     align-items: end;
-    margin-bottom: 11.94rem;
+    margin-bottom: 11.5rem;
   }
   .about-section__picture {
     margin-bottom: 0;
   }
   .about-section__content {
     text-align: start;
-    padding: 5.5rem 0 0 7.38rem;
-    margin-left: -11rem;
+    padding: 5.94rem 0 0 6.13rem;
+    margin-left: -10.25rem;
   }
 }
 .creations-section {
@@ -597,7 +597,7 @@ main {
 @media (min-width: 43.75rem) {
   .creations-section {
     align-items: normal;
-    margin: 0 auto 9.44rem auto;
+    margin: 0 auto 9.31rem auto;
   }
   .creations-section__container {
     align-items: center;
@@ -607,7 +607,7 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
   .btn--desktop {
-    display: block;
+    display: inline-flex;
   }
   .btn--mobile {
     display: none;
