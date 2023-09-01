@@ -30,7 +30,7 @@ function Creations() {
                 srcSet={creation.desktopImg}
                 media="(min-width: 62.5rem)"
               />
-              <img src={creation.mobileImg} alt={creation.title} />
+              <img src={creation.mobileImg} alt="" />
             </picture>
           </li>
         ))}
